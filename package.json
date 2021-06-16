@@ -4,7 +4,9 @@
   "description": "blog-home-page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npx npm-force-resolutions",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev"
   },
   "author": "Chuck <dota2mm@163.com>",
   "license": "MIT",
@@ -25,5 +27,8 @@
   },
   "dependencies": {
     "particles.js": "^2.0.0"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   }
 }
